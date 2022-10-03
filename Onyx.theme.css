@@ -1,0 +1,117 @@
+/**
+ * @name Onix
+ * @description onix-cobalt color scheme
+ * @author Just Horrid
+ * @version 1.0.0
+ * @authorId 804662287326511136
+ */
+
+/* To change the colors, change the variables inside the root {}, do NOT change the @import url() */
+
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+@import url(https://dablulite.github.io/accountdetailscolumns/import.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/ProfileBannerSkins.css);
+/* All colors are in RGB format (red, green, blue) use: https://www.google.com/search?q=colorpicker	*/
+
+:root {
+	--font:						Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;					/*	General Font				*/
+	--settingsicons:			1;						/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no			*/
+	
+	--accentcolor:  			5,74,145;				/*	Blurple				 - 	default:	88,101,242		 - 	hex:	#5865f2		*/
+	--accentcolor2:  			104,156,202;			/*	Boostpink			 - 	default:	255,115,250		 - 	hex:	#ff73fa		*/
+	--linkcolor:  				0,163,106;				/*	Link Color			 - 	default:	0,176,244		 - 	hex:	#00b0f4		*/
+	--mentioncolor:  			241,115,0;				/*	Highlight Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--successcolor: 			252, 175, 88;				/*	Success Color		 - 	default:	59,165,92		 - 	hex:	#3ba55c		*/
+	--warningcolor: 			129,164,205;				/*	Warning Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--dangercolor:  			237,66,69;				/*	Danger Color		 - 	default:	237,66,69		 - 	hex:	#ed4245		*/
+	
+	--textbrightest: 			225,225,225;			        /*	Text Color 1		 - 	default:	255,255,255		 - 	hex:	#ffffff		*/
+	--textbrighter: 			222,222,222;			/*	Text Color 2		 - 	default:	220,221,222		 - 	hex:	#dcddde		*/
+	--textbright: 				185,185,185;			/*	Text Color 3		 - 	default:	185,187,190		 - 	hex:	#b9bbbe		*/
+	--textdark: 				142,146,151          	/*	Text Color 4		 - 	default:	142,146,151		 - 	hex:	#8e9297		*/
+	--textdarker: 				115,115,115;			/*	Text Color 5		 - 	default:	114,118,125		 - 	hex:	#72767d		*/
+	--textdarkest: 				80,80,80;				/*	Text Color 6		 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
+	
+	--backgroundaccent: 		54,57,59;				/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
+	--backgroundprimary: 		46,40,42;				/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
+	--backgroundsecondary: 	96, 73, 90;		    /*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 	15,15,15;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
+	--backgroundtertiary: 		45,49,66;				/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundfloating: 		0,0,0;					/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
+
+	--roles-roundness: 0; /* change the 0 to any other number if you want the roles to be fully round */
+
+  --roles-roundness-calc: calc((var(--roles-roundness) + .21) * 25px)
+}
+.role-2TIOKu {
+  transform: translate(0);
+  border: 0;
+  border-radius: var(--roles-roundness-calc);
+}
+.role-2TIOKu .roleRemoveIcon-387wKV {
+  margin: 0;
+  left: unset;
+  transform: translate(50%,-50%);
+}
+.role-2TIOKu .roleRemoveButton-17oXnT{position: static}
+.role-2TIOKu .roleCircle-3K9O3d:before {
+  content: '';
+  top: 0;left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  background: inherit;
+  border-radius: var(--roles-roundness-calc);
+  border: 2px solid transparent;
+  -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+}
+.panels-3wFtMD {
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border: 1px solid var(--background-secondary);
+	border-radius: 20px;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.45);
+  }
+  .messageAttachmentNoJustify-lIzP9c {
+    justify-self: start !important;
+  }
+:root {
+    --bounce-height: 20px;
+}
+
+.full-motion .listItem-3SmSlK.bd-guild.bd-badge .pill-2RsI5Q.bd-unread:not(.bd-selected) + div:not([class])  {
+    animation-name: unreadguildbounce; 
+    animation-delay: 1s; /* delay before begin bouncing */
+    animation-duration: 1.5s; /* duration of each bounce */
+    animation-iteration-count: 5; /* number of bounces */
+}
+
+@keyframes unreadguildbounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(calc(var(--bounce-height) * -1));} 
+   60% {transform: translateY(calc(var(--bounce-height) * -.5));} 
+}
+.favoriteIcon-2kWmTP > path {
+    d: path("M16.44 3.10156C14.63 3.10156 13.01 3.98156 12 5.33156C10.99 3.98156 9.37 3.10156 7.56 3.10156C4.49 3.10156 2 5.60156 2 8.69156C2 9.88156 2.19 10.9816 2.52 12.0016C4.1 17.0016 8.97 19.9916 11.38 20.8116C11.72 20.9316 12.28 20.9316 12.62 20.8116C15.03 19.9916 19.9 17.0016 21.48 12.0016C21.81 10.9816 22 9.88156 22 8.69156C22 5.60156 19.51 3.10156 16.44 3.10156Z");
+    transform: scale(1.1) translate(-1.5px, -1px);
+    transition: all 0.2s ease-in-out;
+}
+.wrapper-3kah-n.selected-1Drb7Z[aria-label*="Fav"] .favoriteIcon-2kWmTP path {
+    fill: #F62B30;
+}
+.wrapper-3kah-n.selected-1Drb7Z[aria-label*="Fav"] .childWrapper-1j_1ub {
+    background: var(--background-primary) !important;
+}
+.wrapper-3kah-n.selected-1Drb7Z[aria-label*="Fav"] .childWrapper-1j_1ub::after {
+    background-color: #F62B30;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    filter: blur(10px);
+    opacity: 0.4;
+}
