@@ -1,0 +1,64 @@
+/**
+ * @name Pokemon Leaf Green
+ * @author Just Horrid
+ * @version 2.0.0
+ * @description Hit yourself with the nostalgia of Pokemon leaf Green and Gibbu's Frosted Glass
+ * @source https://github.com/DiscordStyles/FrostedGlass
+ * @authorId 804662287326511136
+*/
+
+@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
+@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css');
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://nyri4.github.io/Discolored/main.css');
+
+:root {
+  --background-image: url('https://mj-gallery.com/313f9c09-164a-4cdb-a2e5-548ad57605ab/grid_0.png');
+  --background-image-blur: 0px;
+  --background-image-size: cover;
+  --background-image-position: center;
+  --popout-modal-image: var(--background-image);
+  --popout-modal-blur: 5px;
+  --popout-modal-size: cover;
+  --popout-modal-position: center;
+  --home-button-image: url('https://i.imgur.com/1qQH954.png');
+  --home-button-size: 125%;
+  --home-button-position: center;
+  --serverlist-brightness: 0.72;
+  --left-brightness: 0.7;
+  --middle-brightness: 0.6;
+  --right-brightness: 0;
+  --popout-modal-brightness: 0.75;
+  --gradient-primary: 137,255,0;
+  --gradient-secondary: 143,137,88;
+  --link-colour: #0AFF00;
+  --scrollbar-colour: rgb(95,27,27,0.05);
+  --gradient-direction: 320deg;
+  --tint-colour: 255,51,159;
+  --tint-brightness: 0;
+  --font: Whitney;
+  --window-padding: 0px;
+  --window-roundness: 28px;
+  --update-notice-1: none;
+  --columns: 2;
+  --guildgap: 3;
+  --aligndms: 0;
+  --rs-small-spacing: 2px;
+  --rs-medium-spacing: 2px;
+  --rs-large-spacing: 2px;
+  --rs-small-width: 2px;
+  --rs-medium-width: 2px;
+  --rs-large-width: 2px;
+  --rs-avatar-shape: 50%;
+  --rs-online-color: #43b581;
+  --rs-idle-color: #faa61a;
+  --rs-dnd-color: #f04747;
+  --rs-offline-color: #636b75;
+  --rs-streaming-color: #643da7;
+  --rs-phone-visible: block;
+}
+
+/* Any custom CSS below here */
+
+
